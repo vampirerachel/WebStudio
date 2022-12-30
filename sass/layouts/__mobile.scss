@@ -1,11 +1,22 @@
+@use '../utilities/_vars';
+@use '../components/_comp';
+
 .mobile{
- margin-right: 15px;
+    fill:transparent;
 }
 .mobile__button{
     border: none;
     background: transparent;
-
+    @extend %transition;
 }
-.mobile__svg{
 
+@media screen and (max-width: 480px){
+    .mobile{
+    fill: vars.$text-color-default;
+    }
+    .mobile__button:hover,
+    .mobile__button:focus {
+                fill: vars.$highlight-color;
+                cursor: pointer;
+             }
 }

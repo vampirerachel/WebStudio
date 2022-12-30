@@ -44,9 +44,7 @@
 }
 
 @media screen and (max-width: 480px) {
-.images__list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+.images__section {
+        display: none;
     }
 }

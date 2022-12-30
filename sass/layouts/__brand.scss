@@ -35,3 +35,33 @@
     margin-right: 30px;
 }
 }
+
+
+@media screen and (max-width:480px) {
+    .brand__section{
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    .brand__title{
+            font-size: 28px;
+            line-height: calc(28/32);
+            margin-bottom: 30px;
+                        
+    }
+    .brand__title--margin{
+            margin-bottom: 30px;
+        }
+    .brand__list{
+   margin-bottom: 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    .brand__icon{
+        width: 210px;
+            margin-bottom: 30px;
+    }
+
+        }
+        
+

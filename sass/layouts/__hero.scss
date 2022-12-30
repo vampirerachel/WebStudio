@@ -65,8 +65,11 @@
     }
     .hero___title{
             font-size: 26px;
-            line-height: 42px;
+            line-height: calc(42/26);
             width: 360px;
 }
+.hero__button{
 
+    
+}
 }

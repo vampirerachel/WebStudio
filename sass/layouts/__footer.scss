@@ -165,3 +165,68 @@
     fill: vars.$white-color;
 
 }
+
+@media screen and (max-width:480px) {
+.footer__logo{
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer__logo--color{
+    color: vars.$white-color;
+}
+.footer__section--flex{
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+}
+.footer__address--link,
+.footer__contact{
+    line-height: calc(16/14);
+align-items: center;
+margin-bottom: 12px;
+
+}
+.footer__list:not(:last-child){
+    margin-bottom: 12px;
+}
+
+.footer__address{
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.findus{
+    margin-left: auto;
+    margin-right: auto;
+}
+.findus__title{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.findus__list{
+    margin-bottom: 60px;
+}
+.newsletter{
+    align-items: center;
+}
+.newsletter__form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    align-items: center;
+}
+.newsletter__title{
+    margin-bottom: 20px;
+}
+.newsletter__email{
+    margin-bottom: 20px;
+    width: 450px;
+}
+.footer__section--mobile{
+    
+        display: flex;
+    flex-direction: column;
+}
+}

@@ -1,3 +1,56 @@
+.brand__section, .team__section-title, .images__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
+}
+
+.input__button, .modal__form, #name,
+#phone-number,
+#form-email,
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .hero__button, .contacts__link, .nav__item, .nav__link, .mobile__button {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.newsletter__title, .findus__title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile {
+  fill: transparent;
+}
+
+.mobile__button {
+  border: none;
+  background: transparent;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile {
+    fill: #212121;
+  }
+  .mobile__button:hover,
+.mobile__button:focus {
+    fill: #2196F3;
+    cursor: pointer;
+  }
+}
 body {
   font-family: "Roboto";
   font-style: normal;
@@ -143,7 +196,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .hero__button, .contacts__link, .nav__item, .nav__link {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .hero__button, .contacts__link, .nav__item, .nav__link, .mobile__button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -177,7 +230,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .hero__button, .nav__link, .nav__item, .contacts__link {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .hero__button, .mobile__button, .nav__link, .nav__item, .contacts__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -334,7 +387,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .nav__link, .nav__item, .contacts__link, .hero__button {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -410,7 +463,7 @@ textarea {
   }
   .hero___title {
     font-size: 26px;
-    line-height: 42px;
+    line-height: 1.6153846154;
     width: 360px;
   }
 }
@@ -427,7 +480,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .nav__link, .nav__item, .contacts__link, .hero__button {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -523,7 +576,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .nav__link, .nav__item, .contacts__link, .hero__button {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -581,10 +634,8 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
-  .images__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .images__section {
+    display: none;
   }
 }
 .brand__section, .images__title, .team__section-title {
@@ -600,7 +651,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -694,6 +745,37 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.team__images--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .team__images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team__item {
+    min-width: 450px;
+  }
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  h2.team__section-title {
+    font-size: 28px;
+    line-height: 0.875;
+  }
+  .team__section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .team__images--mobile {
+    display: block;
+  }
+  .team__images--desktop {
+    display: none;
+  }
+}
 .images__title, .team__section-title, .brand__section {
   font-weight: 700;
   font-size: 36px;
@@ -707,7 +789,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -757,6 +839,29 @@ textarea {
   margin-right: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .brand__section {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .brand__title {
+    font-size: 28px;
+    line-height: 0.875;
+    margin-bottom: 30px;
+  }
+  .brand__title--margin {
+    margin-bottom: 30px;
+  }
+  .brand__list {
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .brand__icon {
+    width: 210px;
+    margin-bottom: 30px;
+  }
+}
 .images__title, .team__section-title, .brand__section {
   font-weight: 700;
   font-size: 36px;
@@ -770,7 +875,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -941,6 +1046,66 @@ textarea {
   fill: #FFFFFF;
 }
 
+@media screen and (max-width: 480px) {
+  .footer__logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__logo--color {
+    color: #FFFFFF;
+  }
+  .footer__section--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__address--link,
+.footer__contact {
+    line-height: 1.1428571429;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .footer__list:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .footer__address {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .findus {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .findus__title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .findus__list {
+    margin-bottom: 60px;
+  }
+  .newsletter {
+    align-items: center;
+  }
+  .newsletter__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    align-items: center;
+  }
+  .newsletter__title {
+    margin-bottom: 20px;
+  }
+  .newsletter__email {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+  .footer__section--mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .images__title, .team__section-title, .brand__section {
   font-weight: 700;
   font-size: 36px;
@@ -954,7 +1119,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button, .portfolio__button, .portfolio__item, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item--position {
+#comments, .modal__button, .mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button, .portfolio__button, .portfolio__item, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item--position {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1098,7 +1263,7 @@ textarea {
   margin-bottom: 30px;
 }
 
-.nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button, .portfolio__button, .portfolio__item, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item--position, .modal__button, #name,
+.mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button, .portfolio__button, .portfolio__item, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item--position, .modal__button, #name,
 #phone-number,
 #form-email,
 #comments, .modal__form, .input__button {
@@ -1331,13 +1496,4 @@ textarea {
 .input:checked + .input__terms > .input__check {
   background-color: #2196F3;
   border: none;
-}
-
-.mobile {
-  margin-right: 15px;
-}
-
-.mobile__button {
-  border: none;
-  background: transparent;
 }/*# sourceMappingURL=main.css.map */

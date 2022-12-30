@@ -73,3 +73,35 @@
     @include social__hover(vars.$white-color, vars.$highlight-color, vars.$white-color);
 }
 }
+.team__images--mobile{
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+    .team__images{
+        flex-direction: column;
+        align-items: center;
+    }
+.team__item{
+    min-width: 450px;
+&:not(:last-child) {
+    margin-bottom: 30px;
+    margin-right: 0;
+}
+}
+h2.team__section-title{
+    font-size: 28px;
+        line-height: calc(28/32);
+}
+.team__section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+.team__images--mobile{
+    display: block;
+}
+.team__images--desktop{
+    display: none;
+}
+}
