@@ -1,6 +1,13 @@
 @use '../utilities/_vars';
 @use '../components/_comp';
 
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
 .mobile{
     fill:transparent;
 }
@@ -8,6 +15,26 @@
     border: none;
     background: transparent;
     @extend %transition;
+}
+.mobile__menu{
+    min-width: 480px;
+    margin-top: 48px;
+    display: none;
+}
+.nav__mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts__mobile{
+    display: flex;
+    flex-direction: column;
+}
+.mobile__links{
+    display: flex;
+    justify-content: center;
+    
 }
 
 @media screen and (max-width: 480px){
@@ -20,3 +47,4 @@
                 cursor: pointer;
              }
 }
+

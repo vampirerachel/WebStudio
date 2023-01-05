@@ -237,3 +237,36 @@
     background-color: vars.$highlight-color;
     border: none;
 }
+
+@media screen and (min-width:480px){
+
+    .modal{
+    width:450px ;
+    height:609px;
+    }
+    .modal__form{
+        margin-top: 86px;
+    }
+    .modal__title{
+        line-height: calc(23/20);
+        width: 370px;
+    }
+    .modal__text{
+        line-height: calc(14/12);
+    }
+    .modal__button{
+        margin-left:413px;
+    }
+        #name,
+        #phone-number,
+        #form-email,
+        #comments{
+            min-width: 370px;
+        }
+    .input__check--margin{
+        max-width: 336px;
+    }
+        .input__button{
+            margin-left: 125px;
+        }
+}

@@ -32,6 +32,13 @@
   pointer-events: none;
 }
 
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
 .mobile {
   fill: transparent;
 }
@@ -39,6 +46,28 @@
 .mobile__button {
   border: none;
   background: transparent;
+}
+
+.mobile__menu {
+  min-width: 480px;
+  margin-top: 48px;
+  display: none;
+}
+
+.nav__mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts__mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile__links {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 480px) {
@@ -372,6 +401,51 @@ textarea {
   }
   .logo--color {
     color: #212121;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__container {
+    max-width: 480px;
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    font-family: "Raleway";
+    line-height: 1.1666666667;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 15px;
+    margin-right: 265px;
+  }
+  .logo--color {
+    color: #212121;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mobile__button {
+    display: none;
+  }
+  .header__container {
+    max-width: 768px;
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    margin-right: 93px;
+    font-size: 24px;
+    line-height: 1.1666666667;
+    width: 134px;
+  }
+  .nav {
+    margin-right: 100px;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts__link {
+    padding: 0px 0px;
+    margin-bottom: 10px;
   }
 }
 .brand__section, .team__section-title, .images__title {
@@ -1054,6 +1128,10 @@ textarea {
   .footer__logo--color {
     color: #FFFFFF;
   }
+  .footer__section--mobile {
+    display: flex;
+    flex-direction: column;
+  }
   .footer__section--flex {
     display: flex;
     flex-direction: column;
@@ -1065,14 +1143,17 @@ textarea {
     align-items: center;
     margin-bottom: 12px;
   }
-  .footer__list:not(:last-child) {
-    margin-bottom: 12px;
-  }
   .footer__address {
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .footer__list:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .footer__contact--margin {
+    margin-left: 10px;
   }
   .findus {
     margin-left: auto;
@@ -1100,10 +1181,6 @@ textarea {
   .newsletter__email {
     margin-bottom: 20px;
     width: 450px;
-  }
-  .footer__section--mobile {
-    display: flex;
-    flex-direction: column;
   }
 }
 .images__title, .team__section-title, .brand__section {
@@ -1496,4 +1573,36 @@ textarea {
 .input:checked + .input__terms > .input__check {
   background-color: #2196F3;
   border: none;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+  .modal__form {
+    margin-top: 86px;
+  }
+  .modal__title {
+    line-height: 1.15;
+    width: 370px;
+  }
+  .modal__text {
+    line-height: 1.1666666667;
+  }
+  .modal__button {
+    margin-left: 413px;
+  }
+  #name,
+#phone-number,
+#form-email,
+#comments {
+    min-width: 370px;
+  }
+  .input__check--margin {
+    max-width: 336px;
+  }
+  .input__button {
+    margin-left: 125px;
+  }
 }/*# sourceMappingURL=main.css.map */

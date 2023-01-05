@@ -18,7 +18,7 @@
 	<div class="container header__container">
 		<a href="./index.html" class="logo logo--margin">Web<span class="logo--color">Studio</span></a>
 										<div class="mobile">
-											<button type="button" class="mobile__button" openMenuBtn>
+											<button type="button" class="mobile__button menu-toggle js-open-menu" aria-expanded=" false"aria-controls="mobile-menu">
 												<svg class="mobile__svg" width="40" height="40">
 													<use href="./images/sprite.svg#icon-mobile_menu"></use>
 												</svg>
@@ -362,7 +362,7 @@
 								href="mailto:info@devstudio.com">info@devstudio.com</a>
 						</li>
 						<li>
-							<a class="footer__contact footer__contact--hover" href="tel:2127724150">+1 212-772-4150</a>
+							<a class="footer__contact footer__contact--hover footer__contact--margin" href="tel:2127724150">+1 212-772-4150</a>
 						</li>
 					</ul>
 				</address>
@@ -417,6 +417,46 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="mobile__menu menu-container js-menu-container">
+		<h1 class="visually-hidden">Mobile Menu</h1>
+			<button type="button" class="modal__button mobile__button menu-toggle js-close-menu">
+				<svg width="18" height="18">
+					<use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
+				</svg>
+			</button>
+		<nav>
+			<ul class="nav nav__mobile">
+				<li class="nav__item nav__item--mobile"><a href="./index.html" class="nav__link">Studio</a></li>
+				<li class="nav__item nav__item--mobile"><a href="./portfolio.html" class="nav__link">Portfolio</a></li>
+				<li class="nav__item nav__item--mobile"><a href="#" class="nav__link">Contacts</a></li>
+			</ul>
+		</nav>
+		<ul class="contacts contacts__mobile">
+			<li class="contacts__item contacts__item--mobile">
+				<a href="mailto:info@devstudio.com" class="contacts__link">
+					<svg class="contacts__icon" width="20" height="16">
+						<use href="./images/sprite.svg#icon-envelope"></use>
+					</svg>
+					info@devstudio.com
+				</a>
+			</li>
+			<li class="contacts__item contacts__item--mobile">
+				<a href="tel:2127724150" class="contacts__link">
+					<svg class="contacts__icon" width="10" height="16">
+						<use href="./images/sprite.svg#icon-smartphone"></use>
+					</svg>
+					+1 (212) 772-4150
+				</a>
+			</li>
+		</ul>
+		<ul class="mobile__links">
+			<li class="mobile__social">Instagram</li>
+			<li class="mobile__social">Twitter</li>
+			<li class="mobile__social">Facebook</li>
+			<li class="mobile__social">Linkedin</li>
+		</ul>
+	</div>
 
 	<div class="backdrop is-hidden" data-modal>
 		<div class="modal">
