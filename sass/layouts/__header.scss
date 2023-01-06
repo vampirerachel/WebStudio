@@ -142,61 +142,10 @@
         padding-top: 16px;
         padding-bottom: 16px;
         margin-left: 15px;
-        margin-right: 265px;
+        margin-right: 256px;
     }
     .logo--color{
         color: vars.$text-color-default;
     }
 
-}
-@media screen and (max-width: 768px) {
-    .header__container {
-        max-width: 480px;
-        margin: 0;
-        padding: 0;
-
-    }
-
-
-    .logo {
-        font-family: 'Raleway';
-        line-height: calc(28px/24px);
-        padding-top: 16px;
-        padding-bottom: 16px;
-        margin-left: 15px;
-        margin-right: 265px;
-    }
-
-    .logo--color {
-        color: vars.$text-color-default;
-    }
-
-}
-@media screen and (max-width: 768px){
-    .mobile__button{
-        display: none;
-    }
-    .header__container {
-        max-width: 768px;
-        margin: 0;
-        padding: 0;
-    }
-    .logo{
-margin-right: 93px;
-        font-size: 24px;
-        line-height: calc(28/24);
-        width: 134px;
-    }
-    .nav{
-        margin-right: 100px;
-    }
-.contacts{
-    display: flex;
-    flex-direction: column;
-
-}
-.contacts__link{
-        padding: 0px 0px;
-    margin-bottom: 10px;
-}
 }

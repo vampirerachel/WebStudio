@@ -1,85 +1,3 @@
-.brand__section, .team__section-title, .images__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 30px;
-}
-
-.input__button, .modal__form, #name,
-#phone-number,
-#form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .hero__button, .contacts__link, .nav__item, .nav__link, .mobile__button {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.newsletter__title, .findus__title {
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
-}
-
-.mobile {
-  fill: transparent;
-}
-
-.mobile__button {
-  border: none;
-  background: transparent;
-}
-
-.mobile__menu {
-  min-width: 480px;
-  margin-top: 48px;
-  display: none;
-}
-
-.nav__mobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.contacts__mobile {
-  display: flex;
-  flex-direction: column;
-}
-
-.mobile__links {
-  display: flex;
-  justify-content: center;
-}
-
-@media screen and (max-width: 480px) {
-  .mobile {
-    fill: #212121;
-  }
-  .mobile__button:hover,
-.mobile__button:focus {
-    fill: #2196F3;
-    cursor: pointer;
-  }
-}
 body {
   font-family: "Roboto";
   font-style: normal;
@@ -225,7 +143,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .hero__button, .contacts__link, .nav__item, .nav__link, .mobile__button {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .hero__button, .contacts__link, .nav__item, .nav__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -259,7 +177,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .hero__button, .mobile__button, .nav__link, .nav__item, .contacts__link {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .hero__button, .nav__link, .nav__item, .contacts__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -397,55 +315,10 @@ textarea {
     padding-top: 16px;
     padding-bottom: 16px;
     margin-left: 15px;
-    margin-right: 265px;
+    margin-right: 256px;
   }
   .logo--color {
     color: #212121;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header__container {
-    max-width: 480px;
-    margin: 0;
-    padding: 0;
-  }
-  .logo {
-    font-family: "Raleway";
-    line-height: 1.1666666667;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-left: 15px;
-    margin-right: 265px;
-  }
-  .logo--color {
-    color: #212121;
-  }
-}
-@media screen and (max-width: 768px) {
-  .mobile__button {
-    display: none;
-  }
-  .header__container {
-    max-width: 768px;
-    margin: 0;
-    padding: 0;
-  }
-  .logo {
-    margin-right: 93px;
-    font-size: 24px;
-    line-height: 1.1666666667;
-    width: 134px;
-  }
-  .nav {
-    margin-right: 100px;
-  }
-  .contacts {
-    display: flex;
-    flex-direction: column;
-  }
-  .contacts__link {
-    padding: 0px 0px;
-    margin-bottom: 10px;
   }
 }
 .brand__section, .team__section-title, .images__title {
@@ -461,7 +334,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .nav__link, .nav__item, .contacts__link, .hero__button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -554,7 +427,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .nav__link, .nav__item, .contacts__link, .hero__button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -650,7 +523,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .social__link, .nav__link, .nav__item, .contacts__link, .hero__button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -725,7 +598,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .brand__icon, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -863,7 +736,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .newsletter__button, .findus__icon--link, .footer__contact, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -949,7 +822,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button {
+#comments, .modal__button, .portfolio__item--position, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item, .portfolio__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1196,7 +1069,7 @@ textarea {
 .input__button, .modal__form, #name,
 #phone-number,
 #form-email,
-#comments, .modal__button, .mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button, .portfolio__button, .portfolio__item, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item--position {
+#comments, .modal__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button, .portfolio__button, .portfolio__item, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item--position {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1340,7 +1213,7 @@ textarea {
   margin-bottom: 30px;
 }
 
-.mobile__button, .nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button, .portfolio__button, .portfolio__item, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item--position, .modal__button, #name,
+.nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button, .portfolio__button, .portfolio__item, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item--position, .modal__button, #name,
 #phone-number,
 #form-email,
 #comments, .modal__form, .input__button {
@@ -1604,5 +1477,68 @@ textarea {
   }
   .input__button {
     margin-left: 125px;
+  }
+}
+.images__title, .team__section-title, .brand__section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
+}
+
+.nav__link, .nav__item, .contacts__link, .hero__button, .social__link, .brand__icon, .footer__contact, .findus__icon--link, .newsletter__button, .portfolio__button, .portfolio__item, .portfolio__item:hover, .portfolio__item:focus, .portfolio__item--position, .modal__button, #name,
+#phone-number,
+#form-email,
+#comments, .modal__form, .input__button {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.findus__title, .newsletter__title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile__button--open {
+    fill: #212121;
+    background-color: transparent;
+    border: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile__button--open:hover,
+.mobile__button--open:hover {
+    fill: #2196F3;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .menu-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    padding: 30px;
+    background-color: #FFFFFF;
+    transform: translateX(100%);
+  }
+  .menu-container .is-open {
+    transform: translateX(0);
   }
 }/*# sourceMappingURL=main.css.map */

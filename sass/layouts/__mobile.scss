@@ -1,50 +1,36 @@
 @use '../utilities/_vars';
 @use '../components/_comp';
 
+@media screen and (max-width: 480px) {
 
-.menu-container .menu-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #fff;
-}
-.mobile{
-    fill:transparent;
-}
-.mobile__button{
-    border: none;
-    background: transparent;
-    @extend %transition;
-}
-.mobile__menu{
-    min-width: 480px;
-    margin-top: 48px;
-    display: none;
-}
-.nav__mobile{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.contacts__mobile{
-    display: flex;
-    flex-direction: column;
-}
-.mobile__links{
-    display: flex;
-    justify-content: center;
-    
-}
-
-@media screen and (max-width: 480px){
-    .mobile{
-    fill: vars.$text-color-default;
+.mobile__button--open {
+        fill: vars.$text-color-default;
+        background-color: transparent;
+        border: none;
+        transition: vars.$transition-duration vars.$transition-timing-function;
     }
-    .mobile__button:hover,
-    .mobile__button:focus {
-                fill: vars.$highlight-color;
-                cursor: pointer;
-             }
-}
 
+    .mobile__button--open:hover,
+    .mobile__button--open:hover {
+        fill: vars.$highlight-color;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+.menu-container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        padding: 30px;
+        background-color: vars.$white-color;
+        transform: translateX(100%);
+
+    }
+    .menu-container .is-open {
+        transform: translateX(0);
+    }
+}
