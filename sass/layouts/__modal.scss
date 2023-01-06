@@ -221,8 +221,6 @@
     justify-content: center;
 }
 
-
-
 .input__check--margin {
     max-width: 400px;
     margin-bottom: 10px;
@@ -238,12 +236,14 @@
     border: none;
 }
 
-@media screen and (min-width:480px){
+@media screen and (max-width:480px){
 
     .modal{
     width:450px ;
-    height:609px;
+    height: 609px;
+    margin-top: 63px
     }
+
     .modal__form{
         margin-top: 86px;
     }

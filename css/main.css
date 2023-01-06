@@ -315,10 +315,13 @@ textarea {
     padding-top: 16px;
     padding-bottom: 16px;
     margin-left: 15px;
-    margin-right: 256px;
+    margin-right: 0px;
   }
   .logo--color {
     color: #212121;
+  }
+  .mobile-svg {
+    margin-left: 220px;
   }
 }
 .brand__section, .team__section-title, .images__title {
@@ -1448,10 +1451,11 @@ textarea {
   border: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .modal {
     width: 450px;
     height: 609px;
+    margin-top: 63px;
   }
   .modal__form {
     margin-top: 86px;
@@ -1538,7 +1542,7 @@ textarea {
     background-color: #FFFFFF;
     transform: translateX(100%);
   }
-  .menu-container .is-open {
+  .menu-container.is-open {
     transform: translateX(0);
   }
 }/*# sourceMappingURL=main.css.map */

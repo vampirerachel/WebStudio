@@ -142,10 +142,12 @@
         padding-top: 16px;
         padding-bottom: 16px;
         margin-left: 15px;
-        margin-right: 256px;
+        margin-right: 0px;
     }
     .logo--color{
         color: vars.$text-color-default;
     }
-
+.mobile-svg{
+    margin-left: 220px;
+}
 }

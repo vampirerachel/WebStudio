@@ -30,7 +30,7 @@
         transform: translateX(100%);
 
     }
-    .menu-container .is-open {
+    .menu-container.is-open {
         transform: translateX(0);
     }
 }
