@@ -1,23 +1,33 @@
 @use '../utilities/_vars';
 @use '../components/_comp';
 
-@media screen and (max-width: 480px) {
+
 
 .mobile__button--open {
-        fill: vars.$text-color-default;
-        background-color: transparent;
-        border: none;
-        transition: vars.$transition-duration vars.$transition-timing-function;
-    }
+    fill: vars.$text-color-default;
+    background-color: transparent;
+    border: none;
+    transition: vars.$transition-duration vars.$transition-timing-function;
+    position: absolute;
+}
 
-    .mobile__button--open:hover,
-    .mobile__button--open:hover {
-        fill: vars.$highlight-color;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
+.mobile__button--open:hover,
+.mobile__button--open:hover {
+    fill: vars.$highlight-color;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 
+
+@media screen and (max-width: 480px) {
+
+.mobile__button--open.is-open{
+    display: none;
+}
+.mobile__button--open{
+    margin-left:85%;
+}
 .menu-container {
         position: fixed;
         left: 0;
@@ -32,5 +42,100 @@
     }
     .menu-container.is-open {
         transform: translateX(0);
+        padding-top: 0px;
     }
+
+    .mobile__button--close{
+        background-color: transparent;
+        fill: vars.$text-color-default;
+        min-height: 40px;
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        margin-left: 400px;
+        margin-top: 10px;
+    }
+    .nav__link--mobile{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: calc(40/47);
+        letter-spacing: 0.02em;
+        color: vars.$text-color-default;
+        cursor: pointer;
+    }
+        .nav__link--mobile:hover,
+                .nav__link--mobile:focus{
+            color: vars.$highlight-color;
+
+        }
+    .nav__item--mobile:not(:last-child){
+        margin-bottom:32px;
+    }
+    .nav__mobile{
+        margin: top 30px;
+        margin-bottom: 306px;
+    }
+    .contacts__link--email{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: calc(24/28);;
+        letter-spacing: 0.02em;
+        color: vars.$text-color-default;
+        
+    }
+        .contacts__item--email{
+margin-bottom: 64px;
+        }
+        .contacts__link--tel{
+            font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 34px;
+                line-height: calc(40/34);
+                letter-spacing: 0.02em;
+                color: vars.$highlight-color;
+
+        }
+                .contacts__item--tel{
+                margin-bottom: 30px;
+                }
+.mobile__social{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: vars.$highlight-color;
+cursor: pointer;
+
 }
+.mobile__social::after{
+    content:"";
+        width: 22px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
+        margin-left: 10px;
+        margin-right: 10px;
+
+}
+.mobile__links{
+        display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+}
+    }
+
+    @media screen and (min-width:768px) {
+        .mobile__menu{
+            display: none;
+        }
+    }

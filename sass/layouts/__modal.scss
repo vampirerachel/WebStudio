@@ -236,12 +236,13 @@
     border: none;
 }
 
-@media screen and (max-width:480px){
+@media screen and (min-width:480px){
 
     .modal{
     width:450px ;
     height: 609px;
-    margin-top: 63px
+    margin-top: 63px;
+    margin-bottom: 94px;
     }
 
     .modal__form{
@@ -256,6 +257,7 @@
     }
     .modal__button{
         margin-left:413px;
+        margin-bottom: 40px;
     }
         #name,
         #phone-number,
@@ -269,4 +271,46 @@
         .input__button{
             margin-left: 125px;
         }
+}
+
+@media screen and (max-width: 768px) {
+        .modal {
+                width: 450px;
+height: 609px;
+                margin-bottom: 94px;
+            }
+        
+            .modal__form {
+                margin-top: 86px;
+            }
+        
+            .modal__title {
+                line-height: calc(23/20);
+                width: 370px;
+            }
+        
+            .modal__text {
+                line-height: calc(14/12);
+            }
+        
+            .modal__button {
+                margin-left: 413px;
+                margin-bottom: 40px;
+            }
+        
+            #name,
+            #phone-number,
+            #form-email,
+            #comments {
+                min-width: 370px;
+            }
+        
+            .input__check--margin {
+                max-width: 336px;
+            }
+        
+            .input__button {
+                margin-left: 125px;
+                margin-bottom: 40px;
+            }
 }

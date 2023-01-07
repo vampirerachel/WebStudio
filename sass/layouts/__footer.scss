@@ -166,7 +166,7 @@
 
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:480px){
 
     .footer__logo{
     margin-left: auto;
@@ -210,6 +210,7 @@ margin-bottom: 12px;
 .findus{
     margin-left: auto;
     margin-right: auto;
+    margin-top:0px;
 }
 .findus__title{
     margin-left: auto;
@@ -220,19 +221,27 @@ margin-bottom: 12px;
 }
 
 .newsletter{
-    align-items: center;
+    margin-left: 0px;
 }
 .newsletter__form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-bottom: 60px;
-    align-items: center;
 }
 .newsletter__title{
-    margin-bottom: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .newsletter__email{
     margin-bottom: 20px;
     width: 450px;
 }
+.newsletter__button{
+    display: flex;
+    justify-content: center;
+    transform: translateX(50%)
+}
+
 }

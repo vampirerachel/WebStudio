@@ -57,7 +57,7 @@
     cursor: pointer;
 }
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width:480px){
     .hero__section{
         background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url("../images/webstudio/sudio-small-image.jpg");
@@ -68,8 +68,5 @@
             line-height: calc(42/26);
             width: 360px;
 }
-.hero__button{
 
-    
-}
 }

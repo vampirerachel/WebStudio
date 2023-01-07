@@ -44,7 +44,7 @@
     margin-bottom: 30px;
     max-width: 270px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width:480px){
     .features__list {
         flex-direction: column;
     }
@@ -54,7 +54,7 @@ padding: 25px 192px;
 
  }
  .features__description {
-    width: 450px;
+    width: auto;
     margin-bottom: 30px;
  }
  .features__item:not(:last-child) {
@@ -64,4 +64,5 @@ padding: 25px 192px;
     text-align: center;
  }
 }
+
 
