@@ -16,8 +16,10 @@
 }
 
 .modal {
-    height: 581px;
-    width: 528px;
+        width: 450px;
+            height: 609px;
+            margin-top: 63px;
+            margin-bottom: 94px;
     background-color: vars.$white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -25,14 +27,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media screen and (min-width: 1200px) {
+                height: 581px;
+                    width: 528px;
+        }
 }
-
 .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
-
 .modal__button {
     position: absolute;
     display: flex;
@@ -48,14 +52,13 @@
     @extend %transition;
 
 
-&:hover,
-&:focus {
-    fill: vars.$highlight-color;
-    cursor: pointer;
-    box-shadow: 0px 0px 15px var(--text-color-secondary);
+    &:hover,
+    &:focus {
+        fill: vars.$highlight-color;
+        cursor: pointer;
+        box-shadow: 0px 0px 15px var(--text-color-secondary);
 
-}
-
+    }
 }
 .modal__text {
     font-family: Roboto;
@@ -66,13 +69,10 @@
     color: vars.$text-color-secondary;
     margin-left: 40px;
 }
-
-
 .modal__icon {
     position: relative;
     display: flex;
 }
-
 .modal__svg {
     position: absolute;
     top: 0;
@@ -87,7 +87,7 @@
 #phone-number,
 #form-email,
 #comments {
-    min-width: 448px;
+min-width: 370px;
     margin-left: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -97,8 +97,11 @@
     height: 40px;
     color: vars.$text-color-secondary;
     @extend %transition;
-}
+        @media screen and (min-width: 1200px) {
+        min-width: 448px;
 
+            }
+}
 #name:hover,
 #phone-number:hover,
 #form-email:hover,
@@ -112,9 +115,6 @@
     border: 1px solid vars.$highlight-color;
 
 }
-
-
-
 #comments {
     font-family: Roboto;
     font-weight: 400;
@@ -126,14 +126,27 @@
     padding-left: 10px;
     margin-bottom: 0;
 }
-
 .modal__form {
+margin-top: 86px;
     position: absolute;
     margin-top: 60px;
     left: 0;
     top: 0;
+    padding-top:26px;
     @extend %transition;
+        @media screen and (min-width: 1200px) {
+            padding-top:12px;
+            }
+        }
+
+.modal__button {
+    margin-left: 413px;
+    margin-bottom: 40px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 490px;
+        }
 }
+
 
 .modal__title {
     margin: 40px 40px 10px 40px;
@@ -173,12 +186,14 @@
     border: 1px solid vars.$highlight-color;
     border-radius: 4px;
     padding: 10px 55px;
-    margin-left: 164px;
+    margin-left: 125px;
     margin-bottom: 40px;
     width: 200px;
     @extend %transition;
-
-
+@media screen and (min-width: 1200px) {
+                margin-left: 164px;
+                
+}
 &:hover,
 &:focus {
     cursor: pointer;
@@ -234,83 +249,4 @@
 .input:checked+.input__terms >.input__check {
     background-color: vars.$highlight-color;
     border: none;
-}
-
-@media screen and (min-width:480px){
-
-    .modal{
-    width:450px ;
-    height: 609px;
-    margin-top: 63px;
-    margin-bottom: 94px;
-    }
-
-    .modal__form{
-        margin-top: 86px;
-    }
-    .modal__title{
-        line-height: calc(23/20);
-        width: 370px;
-    }
-    .modal__text{
-        line-height: calc(14/12);
-    }
-    .modal__button{
-        margin-left:413px;
-        margin-bottom: 40px;
-    }
-        #name,
-        #phone-number,
-        #form-email,
-        #comments{
-            min-width: 370px;
-        }
-    .input__check--margin{
-        max-width: 336px;
-    }
-        .input__button{
-            margin-left: 125px;
-        }
-}
-
-@media screen and (max-width: 768px) {
-        .modal {
-                width: 450px;
-height: 609px;
-                margin-bottom: 94px;
-            }
-        
-            .modal__form {
-                margin-top: 86px;
-            }
-        
-            .modal__title {
-                line-height: calc(23/20);
-                width: 370px;
-            }
-        
-            .modal__text {
-                line-height: calc(14/12);
-            }
-        
-            .modal__button {
-                margin-left: 413px;
-                margin-bottom: 40px;
-            }
-        
-            #name,
-            #phone-number,
-            #form-email,
-            #comments {
-                min-width: 370px;
-            }
-        
-            .input__check--margin {
-                max-width: 336px;
-            }
-        
-            .input__button {
-                margin-left: 125px;
-                margin-bottom: 40px;
-            }
 }

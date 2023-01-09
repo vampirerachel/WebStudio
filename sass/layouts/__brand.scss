@@ -2,66 +2,64 @@
 @use '../components/_comp';
 
 .brand__section {
-    padding-top: 94px;
+    padding-top: 60px;
     @extend %section__title;
+    padding-left: 0;
+    padding-right: 0;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        }
 }
 
 .brand__title--margin {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        }
 }
-
 .brand__list {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 94px;
+    flex-wrap: wrap;
+justify-content: space-around;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 94px;
+    }
 
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
 
 .brand__icon {
     fill: vars.$svg-color;
     border: 1px solid vars.$svg-color;
     border-radius: 4px;
-    padding: 16px 32px;
+    width: 210px;
+    padding: 16px 52px;
     @extend %transition;
 
-&:hover {
-    fill: vars.$highlight-color;
-    border-color: vars.$highlight-color;
-    cursor: pointer;
-    
-}
-
-&:not(:last-child) {
-    margin-right: 30px;
-}
-}
-
-
-@media screen and (max-width:480px){
-    .brand__section{
-        padding-top: 60px;
-        padding-bottom: 30px;
+    &:nth-child(odd) {
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 30px;
     }
-    .brand__title{
-            font-size: 28px;
-            line-height: calc(28/32);
-            margin-bottom: 30px;
-                        
+    @media screen and (min-width: 768px) {
+        padding: 16px 32px;
     }
-    .brand__title--margin{
-            margin-bottom: 30px;
+        @media screen and (min-width: 1200px) {
+            width: 170px;
         }
-    .brand__list{
-   margin-bottom: 0;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        
-    }
-    .brand__icon{
-        width: 210px;
-            margin-bottom: 30px;
+    &:hover {
+        fill: vars.$highlight-color;
+        border-color: vars.$highlight-color;
+        cursor: pointer;
     }
 
-        }
- 
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
 

@@ -1,38 +1,40 @@
 @use '../utilities/_vars';
 @use '../components/_comp';
-
 .hero__section {
     background-color: vars.$bg-color;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../images/webstudio/studio-large-image.jpg");
+        url("/images/webstudio/sudio-small-image.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+@media screen and (min-width:768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("/images/webstudio/webstudio-medium.jpg")
+    }
+@media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("/images/webstudio/studio-large-image.jpg")
 }
-
-.hero__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-
 
 .hero___title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60/44);
+    font-size: 26px;
+        line-height: calc(42/26);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: vars.$white-color;
     margin-bottom: 30px;
-    width: 696px;
-
+    width: 360px;
+        @media screen and (min-width: 1200px) {
+                font-size: 44px;
+                line-height: calc(60/44);
+                width: 696px;
+            }
 }
-
 
 .hero__button {
     font-family: 'Roboto';
@@ -50,23 +52,11 @@
     padding: 10px 20px;
     @extend %transition;
 
-&:hover,
-&:focus {
-    color: green;
-    background-color: darkblue;
-    cursor: pointer;
-}
-}
-@media screen and (max-width:480px){
-    .hero__section{
-        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../images/webstudio/sudio-small-image.jpg");
-   
+    &:hover,
+    &:focus {
+        color: green;
+        background-color: darkblue;
+        cursor: pointer;
     }
-    .hero___title{
-            font-size: 26px;
-            line-height: calc(42/26);
-            width: 360px;
 }
 
-}

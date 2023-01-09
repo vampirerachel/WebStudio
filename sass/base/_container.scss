@@ -1,35 +1,29 @@
 .container {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+width: 100%;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
+
+@media screen and (min-width: 480px) {
+        width: 480px;
 }
-
-
-* {
-        outline: solid;
-    }
-
-
-  @media screen and (min-width: 480px) {
-        .container {
-                width: auto;
-                overflow-x: hidden;
-      width: 480px;
-        }
-  }
-  @media screen and (min-width: 768px) {
-            .container {
-                    width: auto;
-                    overflow-x: hidden;
-    width: 768px;
-            }
-  }
-
-  @media screen and (min-width: 1200px) {
-.container {
-                width: auto;
-                overflow-x: hidden;
-                width: 1200px;
-        }
-  }
+@media screen and (min-width: 768px) {
+        width: 768px;
+}
+@media screen and (min-width: 1200px) {
+        width: 1200px;
+}
+}
+.header__container {
+        display: flex;
+        align-items: center;
+        @media screen and (min-width:1200px) {
+                        margin: 0px;
+                        padding: 0px;
+                }
+}
+.hero__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
