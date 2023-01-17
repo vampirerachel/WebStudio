@@ -20,6 +20,7 @@
 .menu-container.is-open {
     transform: translateX(0);
     padding-top: 0px;
+
     @media screen and (min-width:768px) {
             display: none;
         }
@@ -134,9 +135,10 @@
 .mobile__button--open {
     border: none;
     background-color: transparent;
-    position: relative;
-    margin-left: 280px;
-    margin-top: 15px;
+padding: 0px;
+    margin-left: 275px;
+margin-top: 10px;
+
     cursor: pointer;
     transition: vars.$transition-duration vars.$transition-timing-function;
 

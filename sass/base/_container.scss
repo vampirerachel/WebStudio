@@ -6,6 +6,7 @@ margin: 0 auto;
 
 @media screen and (min-width: 480px) {
         width: 480px;
+
 }
 @media screen and (min-width: 768px) {
         width: 768px;
@@ -16,10 +17,11 @@ margin: 0 auto;
 }
 .header__container {
         display: flex;
-        align-items: center;
+
         @media screen and (min-width:1200px) {
                         margin: 0px;
                         padding: 0px;
+                        align-items: center;
                 }
 }
 .hero__container {
