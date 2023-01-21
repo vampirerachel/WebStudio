@@ -46,8 +46,8 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
-    line-height: calc(40/47);
+    font-size: 38px;
+    line-height: calc(38/46);
     letter-spacing: 0.02em;
     color: vars.$text-color-default;
     cursor: pointer;
@@ -65,30 +65,27 @@
 
 .nav__mobile {
     margin: top 30px;
-    margin-bottom: 306px;
+    margin-bottom: 200px;
 }
-
+.contacts__mobile{
+    margin-bottom: 100px;
+}
 .contacts__link--email {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: calc(24/28);
+    font-size: 18px;
+    line-height: calc(18/24);
     letter-spacing: 0.02em;
     color: vars.$text-color-default;
-
-}
-
-.contacts__item--email {
-    margin-bottom: 64px;
 }
 
 .contacts__link--tel {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 34px;
-    line-height: calc(40/34);
+    font-size: 20px;
+    line-height: calc(20/25);
     letter-spacing: 0.02em;
     color: vars.$highlight-color;
 
@@ -102,8 +99,8 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 10px;
+    line-height: (10/14);
     color: vars.$highlight-color;
     cursor: pointer;
 

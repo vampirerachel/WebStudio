@@ -80,7 +80,6 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .header__container {
-    margin: 0px;
     padding: 0px;
     align-items: center;
   }
@@ -231,7 +230,7 @@ textarea {
   .logo {
     font-size: 26px;
     line-height: 1.1538461538;
-    margin-left: 115px;
+    margin-left: 100px;
     padding-bottom: 20px;
     margin-top: 24px;
   }
@@ -252,7 +251,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .nav {
-    margin-right: 224px;
+    margin-right: 236px;
   }
 }
 
@@ -339,7 +338,7 @@ textarea {
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .contacts__link {
     margin-bottom: 20px;
-    margin-right: 40px;
+    margin-right: 10px;
   }
 }
 
@@ -811,9 +810,9 @@ textarea {
 @media screen and (min-width: 768px) {
   .team__item {
     max-width: 350px;
+    margin-bottom: 30px;
   }
   .team__item:not(:last-child) {
-    margin-bottom: 0px;
     margin-right: 0px;
   }
   .team__item:nth-child(odd) {
@@ -1824,8 +1823,8 @@ textarea {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 0.8510638298;
+  font-size: 38px;
+  line-height: 0.8260869565;
   letter-spacing: 0.02em;
   color: #212121;
   cursor: pointer;
@@ -1842,29 +1841,29 @@ textarea {
 
 .nav__mobile {
   margin: top 30px;
-  margin-bottom: 306px;
+  margin-bottom: 200px;
+}
+
+.contacts__mobile {
+  margin-bottom: 100px;
 }
 
 .contacts__link--email {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 0.8571428571;
+  font-size: 18px;
+  line-height: 0.75;
   letter-spacing: 0.02em;
   color: #212121;
-}
-
-.contacts__item--email {
-  margin-bottom: 64px;
 }
 
 .contacts__link--tel {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1764705882;
+  font-size: 20px;
+  line-height: 0.8;
   letter-spacing: 0.02em;
   color: #2196F3;
 }
@@ -1877,8 +1876,8 @@ textarea {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 10px;
+  line-height: 0.7142857143;
   color: #2196F3;
   cursor: pointer;
 }
