@@ -801,7 +801,6 @@ textarea {
 }
 
 .team__item {
-  width: 450px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -927,6 +926,11 @@ textarea {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 480px) {
+  .brand__list {
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .brand__list {
     margin-bottom: 30px;
@@ -942,6 +946,11 @@ textarea {
 .brand__item:nth-child(odd) {
   margin: 0px 30px 30px 15px;
 }
+@media screen and (max-width: 480px) {
+  .brand__item:nth-child(odd) {
+    margin: 0px 0px 0px 0px;
+  }
+}
 @media screen and (min-width: 768px) {
   .brand__item:nth-child(odd) {
     margin: 0px 0px 30px 0px;
@@ -954,6 +963,11 @@ textarea {
   border-radius: 4px;
   box-sizing: content-box;
   padding: 16px 52px;
+}
+@media screen and (max-width: 480px) {
+  .brand__icon {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .brand__icon {
@@ -1131,6 +1145,11 @@ textarea {
   margin-bottom: 20px;
   width: 450px;
 }
+@media screen and (max-width: 480px) {
+  .newsletter__email {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .newsletter__email {
     margin-bottom: 20px;
@@ -1168,6 +1187,13 @@ textarea {
   .newsletter__button {
     margin-left: 0;
     transform: translateX(0%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .newsletter__button {
+    margin: 0px auto;
+    transform: none;
   }
 }
 
@@ -1790,7 +1816,7 @@ textarea {
   background-color: transparent;
   cursor: pointer;
   border: none;
-  margin-left: 400px;
+  margin-left: auto;
   margin-top: 10px;
 }
 
@@ -1881,7 +1907,7 @@ textarea {
   border: none;
   background-color: transparent;
   padding: 0px;
-  margin-left: 275px;
+  margin-left: auto;
   margin-top: 10px;
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
