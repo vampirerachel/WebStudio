@@ -924,67 +924,39 @@ textarea {
 .brand__list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
+  margin-bottom: 30px;
 }
-@media screen and (max-width: 480px) {
-  .brand__list {
-    justify-content: center;
-  }
+
+.brand__item {
+  margin-left: 20px;
+  margin-top: 30px;
+  flex-basis: calc(50% - 30px);
 }
-@media screen and (min-width: 768px) {
-  .brand__list {
-    margin-bottom: 30px;
-    justify-content: space-around;
+
+@media screen and (min-width: 760px) {
+  .brand__item {
+    flex-basis: calc(33.3333333333% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
-  .brand__list {
-    flex-wrap: nowrap;
+  .brand__item {
+    flex-basis: calc(16.6666666667% - 30px);
   }
 }
-
-.brand__item:nth-child(odd) {
-  margin: 0px 30px 30px 15px;
-}
-@media screen and (max-width: 480px) {
-  .brand__item:nth-child(odd) {
-    margin: 0px 0px 0px 0px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .brand__item:nth-child(odd) {
-    margin: 0px 0px 30px 0px;
-  }
-}
-
 .brand__icon {
   fill: #AFB1B8;
   border: 1px solid #AFB1B8;
-  border-radius: 4px;
-  box-sizing: content-box;
-  padding: 16px 52px;
-}
-@media screen and (max-width: 480px) {
-  .brand__icon {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .brand__icon {
-    padding: 16px 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .brand__icon {
-    padding: 16px 32px;
-  }
+  width: 100%;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .brand__icon:hover {
   fill: #2196F3;
   border-color: #2196F3;
   cursor: pointer;
-}
-.brand__icon:not(:last-child) {
-  margin-right: 30px;
 }
 
 .brand__title {
@@ -1507,9 +1479,8 @@ textarea {
 
 .modal {
   width: 450px;
-  height: 609px;
-  margin-top: 63px;
-  margin-bottom: 94px;
+  height: 591px;
+  margin-top: 30px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1522,6 +1493,13 @@ textarea {
   .modal {
     height: 581px;
     width: 528px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 350px;
+    height: 540px;
+    margin-top: 0px;
   }
 }
 
@@ -1574,6 +1552,11 @@ textarea {
   margin-top: 25px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 480px) {
+  .modal__svg {
+    margin-top: 19px;
+  }
+}
 
 #name,
 #phone-number,
@@ -1595,6 +1578,15 @@ textarea {
 #form-email,
 #comments {
     min-width: 448px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #name,
+#phone-number,
+#form-email,
+#comments {
+    min-width: 148px;
+    height: 25px;
   }
 }
 
@@ -1622,6 +1614,12 @@ textarea {
   padding-left: 10px;
   margin-bottom: 0;
 }
+@media screen and (max-width: 480px) {
+  #comments {
+    margin-top: 4px;
+    width: 260px;
+  }
+}
 
 .modal__form {
   margin-top: 86px;
@@ -1646,6 +1644,11 @@ textarea {
     margin-left: 490px;
   }
 }
+@media screen and (max-width: 480px) {
+  .modal__button {
+    margin-left: 313px;
+  }
+}
 
 .modal__title {
   margin: 40px 40px 10px 40px;
@@ -1656,6 +1659,11 @@ textarea {
   font-size: 20px;
   letter-spacing: 0.03em;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .modal__title {
+    width: auto;
+  }
 }
 
 .modal__form--hover:hover,
@@ -1691,6 +1699,13 @@ textarea {
     margin-left: 164px;
   }
 }
+@media screen and (max-width: 480px) {
+  .input__button {
+    margin-left: 70px;
+    padding: 5px 45px;
+    margin-bottom: 20px;
+  }
+}
 .input__button:hover, .input__button:focus {
   cursor: pointer;
   box-shadow: 0px 0px 15px #757575;
@@ -1715,6 +1730,11 @@ textarea {
   display: flex;
   cursor: pointer;
 }
+@media screen and (max-width: 480px) {
+  .input__terms {
+    width: 300px;
+  }
+}
 
 .input__check {
   width: 15px;
@@ -1727,6 +1747,11 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .input__check {
+    margin-left: 40px;
+  }
 }
 
 .input__check--margin {
