@@ -71,7 +71,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 100%;
   }
 }
 
@@ -1574,17 +1574,17 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   #name,
-#phone-number,
-#form-email,
-#comments {
+  #phone-number,
+  #form-email,
+  #comments {
     min-width: 448px;
   }
 }
 @media screen and (max-width: 480px) {
   #name,
-#phone-number,
-#form-email,
-#comments {
+  #phone-number,
+  #form-email,
+  #comments {
     min-width: 148px;
     height: 25px;
   }
